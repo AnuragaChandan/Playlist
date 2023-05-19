@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage{listings}
+
+\begin{document}
+
+\title{Playlist Assignment Report}
+\author{Kondaparthy Anuraga Chandan}
+
+\maketitle
+
+\section{Introduction}
+This report describes the implementation and usage of an audio player program written in Python. The program allows the user to randomly select and play audio files from a specified directory. The Pygame library is utilized for audio playback.
+
+\section{Code Description}
+The program consists of the following functions:
+
+\begin{itemize}
+  \item \texttt{play\_next\_song()}: Function to play the next song.
+
+  \item \texttt{play\_previous\_song()}: Function to play the previos song.
+
+  \item \texttt{stop\_music()}: Pauses the currently playing audio.
+  \item \texttt{play\_music()}: Load and play the current song
+
+  \item \texttt{random\_shuffle(song\_files)}: Randomly shuffle the song list.
+\end{itemize}
+
+The program starts by initializing the Pygame mixer and loading the first random audio file to play. The user is given buttons like next,previous,etc for commands in a loop.
+
+\section{Usage}
+To use the program, follow these steps:
+
+\begin{enumerate}
+  \item Specify the directory where the audio files are located by modifying the \texttt{directory} variable.
+  \item Run the program.
+  \item Enter the following commands when prompted:
+  \begin{itemize}
+    \item \texttt{playAgain}: Resumes playback of the current audio file.
+    \item \texttt{stop}: Pauses the currently playing audio.
+    \item \texttt{next}: used to skip currently playing audio.
+    \item \texttt{previous}: used to play previously played audio. 
+
+  \end{itemize}
+\end{enumerate}
+
+\section{Conclusion}
+The audio player program provides basic functionality for playing, pausing, playing previous audio file and skipping the current audio file. It can be extended with additional features such as volume control, playlist management, and graphical user interface (GUI) integration.
+
+\end{document}
